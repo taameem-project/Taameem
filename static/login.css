@@ -54,6 +54,12 @@ color:#505168;
 font-size:14px;
 
 }
+.language-icon{
+    width: 15px;
+}
+.Support-icon{
+    width: 15px;
+}
 
 .login-wrapper{
 
@@ -173,6 +179,10 @@ font-size:13px;
 
 margin-bottom:5px;
 
+}
+.forgot-password{
+color:#1A7BA7;
+font-weight:600;
 }
 
 .password-field{
