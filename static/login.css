@@ -126,7 +126,11 @@ background:#F1F2F5;
 
 border-radius:8px;
 margin-bottom:20px;
-
+border-right:10px;
+}
+.icon{
+    width:15px;
+    
 }
 
 .account-switch button{
@@ -279,4 +283,23 @@ justify-content:center;
 
 gap:40px;
 
+}
+
+/* Email input with left icon */
+.input-icon-wrapper{
+    position:relative;
+    margin-bottom:16px;
+}
+.input-icon{
+    position:absolute;
+    left:12px;
+    top: 22px;
+    transform:translateY(-50%);
+    width:15px;
+    height:auto;
+    pointer-events:none;
+    opacity:0.9;
+}
+.has-icon{
+    padding-left:35px;
 }
