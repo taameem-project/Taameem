@@ -2,19 +2,28 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI;
+font-family:system-ui;
 }
 
 body{
 
 background:#F1F2F5;
 color:#303950;
+}
+
+.header{
 
 display:flex;
-flex-direction:column;
-height:100vh;
+justify-content:space-between;
+align-items:center;
+
+padding:5px 10px;
+
+border-bottom:2px solid #dae1e3;
+background:white;
 
 }
+
 
 
 /* NAVBAR */
@@ -33,13 +42,17 @@ border-bottom:1px solid #e6e6e6;
 }
 
 .logo-area{
+
 display:flex;
 align-items:center;
 gap:10px;
+
 }
 
 .logo{
-height:36px;
+
+width: 200px;
+
 }
 
 .brand{
@@ -47,11 +60,19 @@ font-weight:700;
 color:#063C66;
 }
 
-.nav-right{
+.header-menu{
+
 display:flex;
-gap:25px;
+gap:30px;
 color:#505168;
 font-size:14px;
+
+}
+.language-icon{
+    width: 15px;
+}
+.Support-icon{
+    width: 15px;
 }
 
 
@@ -74,12 +95,12 @@ align-items:center;
 
 .card{
 
-width:440px;
+width:420px;
 
 background:white;
 
 padding:35px;
-
+margin-top:40px;
 border-radius:12px;
 
 box-shadow:0 15px 35px rgba(0,0,0,0.08);
@@ -114,43 +135,38 @@ margin-bottom:20px;
 
 /* TABS */
 
-.account-tabs{
+.account-switch{
 
 display:flex;
-
-background:#f1f2f5;
+background:#F1F2F5;
 
 border-radius:8px;
-
-overflow:hidden;
-
 margin-bottom:20px;
-
+border-right:10px;
+}
+.icon{
+    width:15px;   
 }
 
-.tab{
-
-flex:1;
-
-padding:10px;
-
-border:none;
-
-background:transparent;
-
-cursor:pointer;
-
-color:#505168;
-
-font-weight:600;
-
+.account-switch button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
-.tab.active{
+
+.account-switch .active{
 
 background:white;
+border-radius:8px;
 
-color:#1A7BA7;
+color:#063C66;
+font-weight:600;
+
+
+box-shadow:0 2px 5px rgba(0,0,0,0.08);
 
 }
 
@@ -181,36 +197,71 @@ margin-bottom:20px;
 .form label{
 
 font-size:12px;
-
-color:#303950;
-
+color:#505168;
 display:block;
-
-margin-bottom:5px;
-
-margin-top:10px;
+text-align:left;
+margin-bottom:8px;
+font-weight:bold;
 
 }
 
+
+/* input */
 
 .form input{
 
 width:100%;
+padding:12px 12px 12px 42px;   /* المسافة للنص بعد الأيقونة */
 
-padding:10px;
-
+border-radius:8px;
 border:1px solid #ddd;
 
-border-radius:6px;
+margin-bottom:16px;
+
+font-size:14px;
 
 }
 
 
+/* wrapper */
+
+.input-icon-wrapper{
+
+position:relative;
+margin-bottom:16px;
+
+}
+
+
+/* icon */
+
+.input-icon{
+
+position:absolute;
+
+left:14px;
+
+top: 22px;
+
+transform:translateY(-50%);
+
+width:16px;
+height:16px;
+
+opacity:0.7;
+
+pointer-events:none;
+
+}
+
 .row{
 
 display:flex;
+justify-content:space-between;
 
-gap:15px;
+font-size:13px;
+
+margin-bottom:5px;
 
 }
 
@@ -264,6 +315,7 @@ text-align:center;
 margin-top:15px;
 
 font-size:13px;
+font-weight:bold;
 
 }
 

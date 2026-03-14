@@ -14,16 +14,26 @@
 
 <body>
 
-<header class="navbar">
+<!-- NAVBAR -->
+
+<header class="header">
 
 <div class="logo-area">
 <img src="../img/Logo_Description_for_Taameem 3 copy.png" class="logo">
-<span class="brand">Taameem</span>
+<!-- <span class="brand">Taameem</span> -->
 </div>
 
-<div class="nav-right">
-<a>العربية</a>
-<a>Support</a>
+<div class="header-menu">
+    <div class="language-switch">
+    <a href=""><img src="../img/world.png" class="language-icon"></a>
+    <span>العربية</span>
+    </div>
+
+ <div>
+    <a href=""><img src="../img/faq.png" alt="Support" class="Support-icon"></a>
+    <span>Support</span>
+ </div>   
+
 </div>
 
 </header>
@@ -40,11 +50,9 @@ Government Circular Management Platform
 </p>
 
 
-<div class="account-tabs">
-
-<button class="tab active">Ministry</button>
-<button class="tab">University</button>
-
+<div class="account-switch">
+    <button class="active"><img src="../img/ministry.png" alt="ministry" class="icon"> Ministry</button>
+    <button><img src="../img/universty.png"alt="University" class="icon"> University</button>
 </div>
 
 
@@ -59,27 +67,46 @@ to manage circulars specifically for your institution.
 <form class="form">
 
 <label>Ministry Name *</label>
-<input type="text" placeholder="e.g., Ministry of Education">
+<div class="input-icon-wrapper">
+    <img src="../img/ministry.png" alt="ministry" class="input-icon">
+    <input type="text" placeholder="e.g., Ministry of Education">
+</div>
+
 
 
 <label>Official Email *</label>
-<input type="email" placeholder="admin@ministry.gov">
+<div class="input-icon-wrapper">
+    <img src="../img/email.png" alt="Email" class="input-icon">
+    <input type="email" placeholder="admin@ministry.gov" class="input has-icon">
+</div>
 
 
 <label>Office Phone *</label>
-<input type="text" placeholder="+968 2-XXXXXXX">
+<div class="input-icon-wrapper">
+    <img src="../img/phone.png" alt="phone" class="input-icon">
+    <input type="text" placeholder="+968 2-XXXXXXX">
+</div>
+
 
 
 <div class="row">
 
 <div class="field">
 <label>Password *</label>
-<input type="password" placeholder="******">
+<div class="input-icon-wrapper">
+    <img src="../img/lock.png" alt="lock" class="input-icon">
+    <input type="password" placeholder="******">
+</div>
+
 </div>
 
 <div class="field">
 <label>Confirm Password *</label>
-<input type="password" placeholder="******">
+<div class="input-icon-wrapper">
+    <img src="../img/lock.png" alt="lock" class="input-icon">
+    <input type="password" placeholder="******">
+</div>
+
 </div>
 
 </div>
