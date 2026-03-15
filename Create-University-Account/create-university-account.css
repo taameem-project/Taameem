@@ -1,45 +1,28 @@
 *{
-
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI;
-
+font-family:system-ui;
 }
-
 
 body{
 
 background:#F1F2F5;
 color:#303950;
-
 }
 
-
-
-/* Navbar */
-
-.navbar{
+.header{
 
 display:flex;
 justify-content:space-between;
 align-items:center;
 
-padding:20px 60px;
+padding:5px 10px;
 
+border-bottom:2px solid #dae1e3;
 background:white;
 
-border-bottom:1px solid #ddd;
-
 }
-
-
-.logo{
-
-height:36px;
-
-}
-
 
 .logo-area{
 
@@ -49,23 +32,34 @@ gap:10px;
 
 }
 
+.logo{
+
+width: 200px;
+
+}
 
 .brand{
 
 font-weight:700;
 color:#063C66;
+font-size:18px;
 
 }
 
+.header-menu{
 
-.nav-links a{
-
-margin-left:20px;
-text-decoration:none;
+display:flex;
+gap:30px;
 color:#505168;
+font-size:14px;
 
 }
-
+.language-icon{
+    width: 15px;
+}
+.Support-icon{
+    width: 15px;
+}
 
 
 /* Main */
@@ -97,16 +91,12 @@ box-shadow:0 10px 30px rgba(0,0,0,0.08);
 
 }
 
-
-
 .card h1{
 
 text-align:center;
 color:#063C66;
 
 }
-
-
 
 .subtitle{
 
@@ -120,7 +110,45 @@ margin:10px 0 20px;
 
 }
 
+.account-switch{
 
+display:flex;
+background:#F1F2F5;
+
+border-radius:8px;
+margin-bottom:20px;
+border-right:10px;
+}
+.icon{
+    width:15px;   
+}
+
+.account-switch button{
+
+flex:1;
+
+padding:10px;
+
+border:none;
+
+background:transparent;
+
+cursor:pointer;
+
+}
+
+.account-switch .active{
+
+background:white;
+border-radius:8px;
+
+color:#063C66;
+font-weight:600;
+
+
+box-shadow:0 2px 5px rgba(0,0,0,0.08);
+
+}
 
 /* Tabs */
 
@@ -178,15 +206,16 @@ margin-bottom:10px;
 
 
 
-/* Form */
+/* FORM */
 
-label{
+.form label{
 
 font-size:12px;
-
-margin-bottom:5px;
-
+color:#505168;
 display:block;
+text-align:left;
+margin-bottom:8px;
+font-weight:bold;
 
 }
 
@@ -221,6 +250,9 @@ flex:1;
 
 }
 
+.astric{
+    color: #c0392b;
+}
 
 
 /* Alert */
@@ -296,6 +328,7 @@ font-size:13px;
 color:#1A7BA7;
 
 text-decoration:none;
+font-weight: bold;
 
 }
 
