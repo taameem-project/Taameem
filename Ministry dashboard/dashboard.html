@@ -4,11 +4,11 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Ministry Dashboard</title>
+<title>Taameem Dashboard</title>
 
-<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="../Ministry dashboard/dashboard.css">
 
 </head>
 
@@ -20,7 +20,9 @@
 
 <aside class="sidebar">
 
-<h2 class="logo">Taameem</h2>
+<div class="logo">
+Taameem
+</div>
 
 <nav>
 
@@ -28,210 +30,142 @@
 <a>Send Circular</a>
 <a>All Circulars</a>
 <a>Universities</a>
-<a>Reports / Analytics</a>
+<a>Reports & Analytics</a>
 <a>Notifications</a>
 <a>Settings</a>
 
 </nav>
 
-<div class="logout">Logout</div>
+<div class="logout">
+Logout
+</div>
 
 </aside>
 
+<!-- Main -->
 
+<div class="main">
 
-<!-- Main Content -->
-
-<main class="main">
+<!-- Topbar -->
 
 <header class="topbar">
 
-<h1>Ministry Dashboard</h1>
+<div class="breadcrumb">
+Taameem / Ministry Dashboard
+</div>
 
-<div class="user">Dr. Ahmed Al-Saud</div>
+<div class="profile">
+Dr. Ahmed Al-Saoud
+</div>
 
 </header>
-
 
 <!-- Stats -->
 
 <section class="stats">
 
-<div class="stat">
-
+<div class="card stat">
 <h3>1,284</h3>
 <p>Total Circulars Sent</p>
-
 </div>
 
-<div class="stat">
-
+<div class="card stat">
 <h3>142</h3>
 <p>Pending Responses</p>
-
 </div>
 
-<div class="stat">
-
+<div class="card stat">
 <h3>4.2 Days</h3>
-<p>Avg Response Time</p>
-
+<p>Avg. Response Time</p>
 </div>
 
-<div class="stat">
-
+<div class="card stat">
 <h3>28</h3>
-<p>Active Institutions</p>
-
+<p>Late Institutions</p>
 </div>
 
 </section>
-
-
 
 <!-- Charts -->
 
 <section class="charts">
 
-<div class="chart-card">
-
+<div class="card chart">
 <h3>Overall Response Rate</h3>
 
-<canvas id="responseChart"></canvas>
+<div id="pieChart"></div>
+
 
 </div>
 
-
-<div class="chart-card">
+<div class="card chart">
 
 <h3>University Performance</h3>
 
-<canvas id="performanceChart"></canvas>
+<div id="barChart"></div>
 
 </div>
 
-
-<div class="chart-card">
+<div class="card chart">
 
 <h3>Response Trend</h3>
 
-<canvas id="trendChart"></canvas>
+<div id="lineChart"></div>
 
 </div>
 
 </section>
 
+<!-- Bottom -->
 
+<section class="bottom">
 
-<!-- Action Required -->
-
-<section class="actions">
+<div class="card actions">
 
 <h3>Action Required</h3>
 
-<div class="task">
+<div class="alert">
 
-<span>2024 Faculty Research Grants</span>
+2024 Faculty Research Grants
 
 <button>Remind</button>
-
-<button class="primary">Review</button>
+<button>Detail</button>
 
 </div>
 
+<div class="alert">
 
-<div class="task">
-
-<span>Student Safety Audit Report</span>
+Student Safety Audit Report
 
 <button>Remind</button>
-
-<button class="primary">Review</button>
+<button>Detail</button>
 
 </div>
 
-</section>
+</div>
 
-
-
-<!-- Recent Activity -->
-
-<section class="activity">
+<div class="card activity">
 
 <h3>Recent Activity</h3>
 
 <ul>
 
-<li>New circular issued: Digital Transformation Strategy</li>
-
-<li>University submitted budget reallocation report</li>
-
-<li>Faculty Compliance deadline reminder</li>
-
-<li>Admin role assigned to Mr. Fahad</li>
+<li>New circular sent</li>
+<li>University submitted report</li>
+<li>Critical deadline missed</li>
 
 </ul>
 
-</section>
-
-
-
-<!-- Recent Circulars -->
-
-<section class="table-section">
-
-<h3>Recent Circulars</h3>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>Title</th>
-<th>Deadline</th>
-<th>Response Rate</th>
-<th>Status</th>
-<th>Action</th>
-
-</tr>
-
-</thead>
-
-
-<tbody>
-
-<tr>
-
-<td>Annual Budget Allocations 2024</td>
-<td>2024-05-20</td>
-<td>85%</td>
-<td class="status active">Active</td>
-<td>View</td>
-
-</tr>
-
-<tr>
-
-<td>Campus Safety Protocols Update</td>
-<td>2024-06-01</td>
-<td>63%</td>
-<td class="status urgent">Urgent</td>
-<td>View</td>
-
-</tr>
-
-</tbody>
-
-</table>
+</div>
 
 </section>
-
-</main>
 
 </div>
 
-<script src="dashboard.js"></script>
+</div>
+
+<script src="../Ministry dashboard/dashboard.js"></script>
 
 </body>
+
 </html>
