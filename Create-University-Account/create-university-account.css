@@ -150,6 +150,40 @@ box-shadow:0 2px 5px rgba(0,0,0,0.08);
 
 }
 
+.section-title{
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+margin-top:20px;
+
+margin-bottom:10px;
+
+}
+
+.section-title h3{
+
+font-size:16px;
+
+color:#09375b;
+
+font-weight:600;
+
+}
+
+.section-icon{
+
+width:18px;
+
+height:18px;
+
+opacity:0.9;
+
+}
+
 /* Tabs */
 
 .tabs{
@@ -196,11 +230,11 @@ color:#1A7BA7;
 
 margin-top:20px;
 
-color:#04546C;
+color:#011318;
 
 font-size:14px;
 
-margin-bottom:10px;
+margin-bottom:20px;   /* هذه المسافة بين العنوان والحقول */
 
 }
 
@@ -220,26 +254,66 @@ font-weight:bold;
 }
 
 
-input{
+/* input */
+
+.form input{
 
 width:100%;
+padding:12px 12px 12px 42px;   /* المسافة للنص بعد الأيقونة */
 
-padding:10px;
-
+border-radius:8px;
 border:1px solid #ddd;
 
-border-radius:6px;
+margin-bottom:16px;
 
-margin-bottom:10px;
+font-size:14px;
+
+}
+.astric{
+    color: #c0392b;
+}
+
+/* wrapper */
+
+.input-icon-wrapper{
+
+position:relative;
+margin-bottom:16px;
 
 }
 
 
+/* icon */
+
+.input-icon{
+
+position:absolute;
+
+left:14px;
+
+top: 22px;
+
+transform:translateY(-50%);
+
+width:16px;
+height:16px;
+
+opacity:0.7;
+
+pointer-events:none;
+
+}
+
 .row{
 
 display:flex;
+justify-content:space-between;
 
-gap:15px;
+font-size:13px;
+
+gap:20px;   /* المسافة بين الحقلين */
+
+margin-bottom:15px;
 
 }
 
@@ -250,9 +324,7 @@ flex:1;
 
 }
 
-.astric{
-    color: #c0392b;
-}
+
 
 
 /* Alert */

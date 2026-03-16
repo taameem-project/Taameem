@@ -261,7 +261,9 @@ justify-content:space-between;
 
 font-size:13px;
 
-margin-bottom:5px;
+gap:20px;   /* المسافة بين الحقلين */
+
+margin-bottom:15px;
 
 }
 
