@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Send New Circular</title>
+<title>Send Circular - Taameem</title>
 
 <link rel="stylesheet" href="send-circular.css">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
 
 </head>
 
@@ -16,18 +20,19 @@
 
 <div class="layout">
 
-<!-- SIDEBAR -->
+<!-- Sidebar -->
 
 <aside class="sidebar">
 
-<div class="logo">
-Taameem
+<div class="logo-area">
+<img src="../img/Logo_Description_for_Taameem 3 copy.png" class="logo">
+<!-- <span class="brand">Taameem</span> -->
 </div>
 
 <nav>
 
-<a href="dashboard.html">Dashboard</a>
-<a class="active">Send Circular</a>
+<a class="active">Dashboard</a>
+<a>Send Circular</a>
 <a>All Circulars</a>
 <a>Universities</a>
 <a>Reports & Analytics</a>
@@ -42,63 +47,110 @@ Logout
 
 </aside>
 
+<!-- Main -->
 
+<div class="main">
 
-<!-- MAIN -->
-
-<main class="main">
+<!-- Topbar -->
 
 <header class="topbar">
 
-<h2>Send New Circular</h2>
+<div class="breadcrumb">
+Taameem   >  circulars  > Send Circular
+</div>
 
-<div class="user">
-Dr. Ahmed Masoud
+<div class="profile">
+Dr. Ahmed Al-Saoud
 </div>
 
 </header>
 
 
+<!-- CONTENT -->
+
+<div class="content">
+
+<h2>Send New Circular</h2>
+
+<p class="desc">
+⚠ Draft and distribute directives to educational institutions.
+</p>
 
 <div class="card">
 
+<div class="card-header">
+
 <h3>Circular Details</h3>
 
-<section class="form-section">
+<button class="draft-mini">
+Draft #020
+</button>
+
+</div>
+
+
+<!-- GENERAL -->
+
+<h4>General Information</h4>
 
 <label>Circular Title</label>
 
-<input type="text" placeholder="eg. Mandatory Guidelines for Academic Accreditation 2024">
+<input
+type="text"
+placeholder="e.g. Mandatory Guidelines for Academic Accreditation 2024"
+>
+
 
 <label>Detailed Description</label>
 
-<textarea placeholder="Provide the comprehensive text for the circular directive here..."></textarea>
+<div class="editor">
 
-</section>
+<div class="toolbar">
+
+<button>B</button>
+<button>I</button>
+<button>U</button>
+<button>•</button>
+
+</div>
+
+<textarea
+placeholder="Provide the comprehensive text for the circular directive here..."
+></textarea>
+
+</div>
 
 
+<!-- GRID -->
 
 <div class="grid">
 
-<!-- TARGET UNIVERSITIES -->
+<!-- UNIVERSITIES -->
 
-<div class="card small">
+<div>
 
 <h4>Target Universities</h4>
+
+<p class="small">Select which entities will receive this directive.</p>
+
+<div class="universities">
 
 <label><input type="checkbox"> King Saud University</label>
 <label><input type="checkbox"> Princess Nourah University</label>
 <label><input type="checkbox"> King Abdulaziz University</label>
 <label><input type="checkbox"> Imam Mohammad University</label>
+<label><input type="checkbox"> Umm Al-Qura University</label>
+<label><input type="checkbox"> King Faisal University</label>
 <label><input type="checkbox"> Qassim University</label>
 
 </div>
 
+</div>
 
 
 <!-- DEADLINE -->
 
-<div class="card small">
+<div>
 
 <h4>Deadline & Priority</h4>
 
@@ -110,8 +162,10 @@ Dr. Ahmed Masoud
 
 <div class="priority">
 
-<button class="normal">Normal</button>
+<button class="normal active">Normal</button>
+
 <button class="urgent">Urgent</button>
+
 <button class="critical">Critical</button>
 
 </div>
@@ -121,43 +175,80 @@ Dr. Ahmed Masoud
 </div>
 
 
-
-<!-- FILE UPLOAD -->
-
-<section class="upload">
+<!-- UPLOAD -->
 
 <h4>Supporting Documents</h4>
 
-<div class="upload-box" id="uploadBox">
+<div class="upload" id="uploadBox">
 
-<input type="file" id="fileInput">
+<i class="bi bi-cloud-upload"></i>
 
 <p>Click to upload or drag and drop</p>
 
-</div>
-
-<ul id="fileList"></ul>
-
-</section>
-
-
-
-<div class="buttons">
-
-<button class="draft">Save as Draft</button>
-
-<button class="send">Send Circular</button>
+<input type="file" id="fileInput">
 
 </div>
 
+<div id="fileList"></div>
+
+
+<!-- ACTIONS -->
+
+<div class="actions">
+
+<button class="draft">
+Save as Draft
+</button>
+
+<button class="send">
+
+<i class="bi bi-send"></i>
+Send Circular
+
+</button>
+
 </div>
 
-</main>
+</div>
+
+
+<!-- FOOTER INFO -->
+
+<div class="info-boxes">
+
+<div class="info">
+
+<h5>Standard Format</h5>
+
+<p>Ensure all circulars follow the Ministry 2024 Branding guidelines.</p>
 
 </div>
 
-<script src="send-circular.js"></script>
+<div class="info">
+
+<h5>Digital Signature</h5>
+
+<p>Your digital signature will be automatically appended to the final PDF.</p>
+
+</div>
+
+<div class="info">
+
+<h5>Notifications</h5>
+
+<p>Universities admins will receive push and email notifications upon release.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>

@@ -1,17 +1,21 @@
+const uploadBox = document.getElementById("uploadBox")
 const fileInput = document.getElementById("fileInput")
 const fileList = document.getElementById("fileList")
 
-fileInput.addEventListener("change", function(){
+uploadBox.addEventListener("click",()=>{
 
-const file = fileInput.files[0]
+fileInput.click()
+
+})
+
+fileInput.addEventListener("change",(e)=>{
+
+const file = e.target.files[0]
 
 if(file){
 
-const li = document.createElement("li")
-
-li.textContent = file.name
-
-fileList.appendChild(li)
+fileList.innerHTML =
+"<p>Uploaded: "+file.name+"</p>"
 
 }
 
