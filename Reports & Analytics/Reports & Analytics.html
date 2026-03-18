@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reports & Analytics</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Reports & Analytics/Reports & Analytics.css">
+
+<script src="../Reports & Analytics/Reports & Analytics.js"></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="logo">⬢ Tanmeem</div>
+
+  <ul class="menu">
+      <li>📊 Dashboard</li>
+      <li>✉️ Send Circular</li>
+      <li>📁 All Circulars</li>
+      <li class="active">🎓 Universities</li>
+      <li>📈 Reports & Analytics</li>
+      <li>🔔 Notifications</li>
+      <li>⚙️ Settings</li>
+    </ul>
+
+    <div class="logout">⏻ Logout</div>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <span>Tanmeem Platform > Analytics > <b>Reports</b></span>
+    <div class="user">
+      <span>LOGGED IN AS MINISTRY</span>
+      <strong>Dr. Ahmed Mansoor</strong>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div>
+      <h1>Reports & Analytics</h1>
+      <p>Strategic overview of circular effectiveness and university engagement metrics.</p>
+    </div>
+
+    <div class="actions">
+      <button class="btn light">📅 Last 30 Days</button>
+      <button class="btn light">⚙ Filters</button>
+      <button class="btn primary">⬇ Export Report</button>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="card stat">
+      <span class="icon">📄</span>
+      <div>
+        <p>Total Circulars</p>
+        <h2>142</h2>
+      </div>
+    </div>
+
+    <div class="card stat">
+      <span class="icon">🏫</span>
+      <div>
+        <p>Active Universities</p>
+        <h2>28</h2>
+      </div>
+    </div>
+
+    <div class="card stat">
+      <span class="icon">📊</span>
+      <div>
+        <p>Avg. Response Rate</p>
+        <h2>86.4%</h2>
+      </div>
+    </div>
+
+    <div class="card stat">
+      <span class="icon">⏱</span>
+      <div>
+        <p>Avg. Resolution Time</p>
+        <h2>3.2 Days</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARTS -->
+  <section class="charts">
+    <div class="card">
+      <div class="card-header">
+        <h3>Overall Response Distribution</h3>
+        <span>Efficiency breakdown</span>
+      </div>
+      <canvas id="donut"></canvas>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3>Monthly Submission Trends</h3>
+        <span>Sent vs Received</span>
+      </div>
+      <canvas id="line"></canvas>
+    </div>
+  </section>
+
+  <!-- BAR -->
+  <section class="card">
+    <div class="card-header">
+      <h3>University Performance Comparison</h3>
+    </div>
+    <canvas id="bar"></canvas>
+  </section>
+
+  <!-- BOTTOM -->
+  <section class="bottom">
+
+    <div class="card insight">
+      <h3>Efficiency Insight</h3>
+      <p>
+        The overall response time has improved by <b>24.5%</b> this quarter.
+        Most delays are concentrated in the <b>Technical College</b> sector.
+      </p>
+      <button class="btn primary small">View Heatmap</button>
+    </div>
+
+    <div class="card ranking">
+      <h3>Top Performing Institutions</h3>
+
+      <div class="rank"><span>1</span> Qatar University <b>98%</b></div>
+      <div class="rank"><span>2</span> Hamad Bin Khalifa University <b>92%</b></div>
+      <div class="rank"><span>3</span> College of the North Atlantic <b>87%</b></div>
+
+    </div>
+
+  </section>
+
+</main>
+</div>
+
+<script src="../Reports & Analytics/Reports & Analytics.js"></script>
+</body>
+</html>
