@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Dashboard</title>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../Universities/Universities.css">
+
+<script src="../Universities/Universities.js"></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">⬢ Tanmeem</div>
+
+    <ul class="menu">
+      <li>📊 Dashboard</li>
+      <li>✉️ Send Circular</li>
+      <li>📁 All Circulars</li>
+      <li class="active">🎓 Universities</li>
+      <li>📈 Reports & Analytics</li>
+      <li>🔔 Notifications</li>
+      <li>⚙️ Settings</li>
+    </ul>
+
+    <div class="logout">⏻ Logout</div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="breadcrumb">
+        Tanmeem Platform > Management > <b>Universities</b>
+      </div>
+
+      <div class="user">
+        <span>LOGGED IN AS MINISTRY</span>
+        <strong>Dr. Ahmed Mansoor</strong>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <div>
+        <h1>University Directory</h1>
+        <p>Manage academic institutions, monitor connectivity, and track compliance response rates.</p>
+      </div>
+
+      <button class="btn">+ Register New University</button>
+    </div>
+
+    <!-- Grid -->
+    <section class="grid">
+
+      <!-- Chart -->
+      <div class="card chart-card">
+        <div class="card-header">
+          <h3>Performance Comparison</h3>
+          <span>Top 5 Universities by Response Rate (%)</span>
+        </div>
+        <canvas id="chart"></canvas>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div class="card stat">
+          <p>Registered Institutions</p>
+          <h2>42</h2>
+          <span>Total active universities</span>
+        </div>
+
+        <div class="card stat">
+          <p>Global Response Rate</p>
+          <h2>88.4%</h2>
+          <span class="positive">+2.3% vs last month</span>
+        </div>
+
+        <div class="card stat">
+          <p>Active Users</p>
+          <h2>1,248</h2>
+          <span>Institutional staff accounts</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Table -->
+    <section class="card table-card">
+
+      <div class="table-top">
+        <input placeholder="🔍 Search university name...">
+        <button class="filter">⚙ Filters</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>University Name</th>
+            <th>Status</th>
+            <th>Primary Contact</th>
+            <th>Response Rate</th>
+            <th>Last Active</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="table-body"></tbody>
+      </table>
+
+      <div class="table-footer">
+        <span>Showing 6 of 6 registered institutions</span>
+        <div class="pagination">
+          <button>Previous</button>
+          <button class="active">1</button>
+          <button>Next</button>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<script src="../Universities/Universities.js"></script>
+</body>
+</html>
