@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Notifications</title>
+
+<link rel="stylesheet" href="../notifications/notifications.css">
+
+<!-- Google Font (نفس أسلوب التصميم الاحترافي) -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="logo">⬢ Tanmeem</div>
+
+  <ul class="menu">
+    <li>Dashboard</li>
+    <li>Send Circular</li>
+    <li>All Circulars</li>
+    <li>Universities</li>
+    <li>Reports & Analytics</li>
+    <li class="active">Notifications</li>
+    <li>Settings</li>
+  </ul>
+
+  <div class="logout">Logout</div>
+</aside>
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="breadcrumb">Taameem > System > Notifications</div>
+  <div class="user">
+    LOGGED IN AS MINISTRY <br>
+    <b>Dr. Ahmed Mansoor</b>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>Notifications</h2>
+
+<p class="desc">
+Stay updated with the latest circular responses and system alerts.
+You have <b id="count">2</b> unread messages.
+</p>
+
+<!-- TOP BAR -->
+<div class="top">
+
+<div class="tabs">
+<button class="tab active">All</button>
+<button class="tab">Unread <span id="unreadNum">2</span></button>
+<button class="tab">Mentions</button>
+<button class="tab">System</button>
+</div>
+
+<div>
+<button class="btn">✔ Mark all as read</button>
+<button class="btn outline">⚙ Settings</button>
+</div>
+
+</div>
+
+<!-- SEARCH -->
+<input class="search" placeholder="Search alerts...">
+
+<!-- LIST -->
+<div class="list">
+
+<div class="item unread">
+<div class="icon">🔔</div>
+<div>
+<b>New Response Received</b>
+<div class="time">10 mins ago</div>
+</div>
+</div>
+
+<div class="item unread">
+<div class="icon">🔔</div>
+<div>
+<b>Deadline Approaching</b>
+<div class="time">2 hours ago</div>
+</div>
+</div>
+
+<div class="item">
+<div class="icon">🔔</div>
+<div>
+<b>System Maintenance</b>
+<div class="time">5 hours ago</div>
+</div>
+</div>
+
+<div class="item">
+<div class="icon">🔔</div>
+<div>
+<b>Document Revision Uploaded</b>
+<div class="time">Yesterday</div>
+</div>
+</div>
+
+</div>
+
+<button class="load">Load earlier notifications</button>
+
+<!-- CARDS -->
+<div class="cards">
+
+<div class="card">
+<h4>Notification Settings</h4>
+<p>Configure your email and in-app alerts.</p>
+<a href="#">Configure Alerts</a>
+</div>
+
+<div class="card">
+<h4>Recent Activity</h4>
+<p>Check system logs and user actions.</p>
+<a href="#">View Audit Log</a>
+</div>
+
+<div class="card">
+<h4>Support Desk</h4>
+<p>Need help? Contact support.</p>
+<a href="#">Open Ticket</a>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<script src="../notifications/notifications.js"></script>
+
+</body>
+</html>
